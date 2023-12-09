@@ -49,7 +49,7 @@ function deleteRow(event) {
     if(event.target.tagName === 'BUTTON') {
 
         // get row
-        const row = event.target.parentElement.parentElement;
+        let row = event.target.parentElement.parentElement;
         row.remove();
 
         row = null;
